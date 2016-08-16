@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: standalone
+logging:
+  file: logs/quiz.log
+
+---
+spring:
+  profiles: standalone
+quiz:
+  testdata:
+    enable: true
+
+---
+spring:
+  profiles: build-tests
