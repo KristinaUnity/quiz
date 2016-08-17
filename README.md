@@ -53,5 +53,5 @@ Application has REST methods, for example
 H2 in-memory database used for storing data. There's one test blank form
 (with id 1) in database after start.
 
-You can user H2 console `localhost:8080/console` to view and modify data. 
+You can use H2 console `localhost:8080/console` to view and modify data. 
 
