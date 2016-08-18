@@ -10,7 +10,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class BlankFormServiceImpl implements IBlankFormService {
 
-    private @Autowired BlankFormRepository blankFormRepository;
+    @Autowired
+    private BlankFormRepository blankFormRepository;
 
     @Override
     public BlankForm findOneById(Long id) throws NotFoundException {

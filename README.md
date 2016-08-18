@@ -39,7 +39,7 @@ To build project use
 
 To start application
 ```
-java -jar build/lib/quiz-0.0.1-SNAPSHOT.jar
+java -jar build/lib/quiz-{version}.jar
 ```
 
 Application has REST methods, for example
