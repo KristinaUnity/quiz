@@ -24,7 +24,7 @@ ADD build.gradle /opt/app-root/src/
 ADD src /opt/app-root/src/src
 
 # build
-RUN sh /opt/app-root/src/gradlew build
+RUN sh /opt/app-root/src/gradlew build -x test
 # copy to correct location
 RUN cp -a  /opt/app-root/src/build/libs/quiz*.jar /opt/app-root/app.jar
 
