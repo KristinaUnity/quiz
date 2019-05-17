@@ -11,12 +11,15 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class User {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private Long name;
+    private String name;
+
+    public User(String name) {
+        this.name = name;
+    }
 }
