@@ -20,8 +20,8 @@ import static org.springframework.web.bind.annotation.RequestMethod.PUT;
 @RequestMapping("/api/blank-form")
 public class BlankFormController {
 
-    private @Autowired
-    IBlankFormService blankFormService;
+    private @Autowired IBlankFormService blankFormService;
+
     private @Autowired MapperFacade mapper;
 
     @RequestMapping(path = "/{id}", method = GET, produces = APPLICATION_JSON_UTF8_VALUE)

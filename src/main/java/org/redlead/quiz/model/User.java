@@ -1,10 +1,8 @@
-package org.redlead.quiz.develop;
+package org.redlead.quiz.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,10 +11,12 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User1 {
+
+public class User {
 
     @Id
     @GeneratedValue
     private Long id;
-    private String name;
+
+    private Long name;
 }
