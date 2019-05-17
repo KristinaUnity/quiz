@@ -42,6 +42,4 @@ public class UserController {
         User user = userService.update(id, mapper.map(userDTO, User.class));
         return mapper.map(user, UserDTO.class);
     }
-
-
 }
